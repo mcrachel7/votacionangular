@@ -1,0 +1,34 @@
+<p>VOTACION HONDURAS</p>
+
+<nz-table #basicTable [nzData]="listaVotacion">
+    <thead>
+      <tr>
+        <th>Candidato</th>
+        <th>Votos</th>
+        <th>Designado Principal</th>
+        <th>Partido</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.candidato}}</td>
+        <td>{{ data.votos }}</td>
+        <td>{{ data.designadoPrincipal }}</td>
+        <td>{{ data.partido}}</td>
+        <td>{{ data.color}}</td>
+        
+        <td>
+          <a>Editar</a>
+          <a>
+            Borrar
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+  
+  
+  
+  
+ 
